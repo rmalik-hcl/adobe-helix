@@ -30,6 +30,9 @@
   object-fit: cover;
 }
  */
+ *, :after, :before {
+  box-sizing: inherit;
+}
  .cards   {
   margin: 0 0 50px;
   display: block;
@@ -48,20 +51,27 @@
 }
 
 .card-teaser-item {
-  -ms-flex: 1 0 25%;
-  flex: 1 0 25%;
-  max-width: 25%;
+  -ms-flex: 1 0 23%;
+  flex: 1 0 23;
+  max-width: 23%;
   padding: 10px;
 /* need to check if we can change 2 div under teaser items to a anchor box*/
   transition: background-color .2s ease-in-out;
   outline: none;
   display: block;
   height: 100%;
-  background-color: #fff;
+  background-color: #fff !important;
   text-decoration: none;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.04), 0 1px 4px 0 rgba(0,0,0,.04);
   border-radius: 3px;
 }
+.cards-card-body  {
+  padding: 23px 22px;
+
+
+}
+
+
 
 .card-teaser-item .cards-card-image {
   overflow: hidden;
@@ -95,4 +105,15 @@
   font-size: 16px;
   color: #002642;
   line-height: 20px;
+}
+
+#products-by-vessel-area {
+
+  font-family: 'Open Sans',sans-serif;
+  color: #005192;
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 40px;
+
 }

@@ -1,18 +1,25 @@
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
+
+
 export default function decorate(block) {
-  /* change to ul, li */
-  const ul = document.createElement('ul');
+  /* change to Div , a */
+  const teasergriddiv = document.createElement('div');
+  teasergriddiv.className='card-teaser-grid';
   [...block.children].forEach((row) => {
-    const li = document.createElement('li');
-    li.innerHTML = row.innerHTML;
-    [...li.children].forEach((div) => {
+    const teaseritemdiv = document.createElement('div');
+    teaseritemdiv.className='card-teaser-item';
+    teaseritemdiv.innerHTML = row.innerHTML;
+    [...teaseritemdiv.children].forEach((div) => {
       if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
       else div.className = 'cards-card-body';
     });
-    ul.append(li);
+    teasergriddiv.append(teaseritemdiv);
   });
-  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  teasergriddiv.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
-  block.append(ul);
+  block.append(teasergriddiv);
 }
+
+
+

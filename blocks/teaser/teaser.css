@@ -1,6 +1,6 @@
 
 
-#cases-studies  {
+#cases-studies {
   box-sizing: border-box;
     margin-left: 0;
     margin-right: 320px;
@@ -10,6 +10,15 @@
     line-height: 40px
 }
 
+#related-case-stories {
+  box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 320px;
+    color: #005192;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px
+}
 
 .teaser ul {
 

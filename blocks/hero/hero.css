@@ -1,4 +1,8 @@
 /* block specific CSS goes here */
+.hero-wrapper{
+  max-height: 380px;
+  overflow: hidden;
+}
 
 main .hero-container > div {
   max-width: unset;
@@ -7,10 +11,25 @@ main .hero-container > div {
 main .hero-container {
   padding: 0;
 }
+main .section:nth-child(1) .hero  {
+  height: 380px;
+}
+
+main .section:nth-child(1) .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background-color: rgba(0,0,0,.2);
+}
   
 main .hero {
    position: relative; 
   padding: 32px;
+  
  /* min-height: 300px; */
 }
 
@@ -19,6 +38,8 @@ main .hero h1 {
   margin-left: auto;
   margin-right: auto;
   color: white;
+  position: relative;
+  z-index: 9;
 }
 
 main .hero picture {

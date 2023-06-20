@@ -273,3 +273,15 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+/* Grid */
+
+.grid-wrapper {
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px;
+  color: #414141;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}

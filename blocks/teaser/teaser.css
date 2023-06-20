@@ -22,3 +22,38 @@
     display: flex;
 
 }
+
+.teaser li {
+
+  margin-right: 20px;
+  position: relative;
+
+}
+
+.teaser li:last-child {
+
+  margin-right: 0px;
+
+}
+
+.teaser  .pm-blue {
+  position: absolute;
+  top: 15px;
+  right: 12px;
+  background: linear-gradient(-179deg,rgba(7,78,184,.95) 0,rgba(19,68,132,.95) 99%) !important;
+  width: 260px;
+  height: 88%;
+  overflow: hidden;
+  display: block;
+  /* width: 100%; */
+  color: #fff;
+  /* position: relative; */
+  letter-spacing: .2px;
+  z-index: 10;
+  padding: 12px 20px;
+  bottom: 0;
+  /* min-height: 72px; */
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+

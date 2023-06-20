@@ -222,7 +222,7 @@ main .section {
 
 @media (min-width: 600px) {
   main .section {
-    padding: 6px 32px;
+    padding: 0px 32px;
   }
 }
 

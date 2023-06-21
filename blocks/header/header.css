@@ -2,7 +2,7 @@
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  z-index: 2;
+  z-index: 999;
   position: fixed;
   top:0;
   left: 0;
@@ -149,14 +149,14 @@ header .nav-brand {
   font-weight: 700;
   line-height: 1;
   background: #fff;
-  padding: 0 2rem;
+  padding: 0 3.3rem;
   max-width: 1264px;
   margin: 0 auto;
   width: 100%;
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 188px;
   height: auto;
 }
 

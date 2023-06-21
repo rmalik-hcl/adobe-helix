@@ -10,6 +10,14 @@ header .nav-wrapper {
   /* border-bottom: 5px solid transparent; */
 }
 
+header .header-navigation >div{
+  display: flex;
+  justify-content: space-between;
+  color: #134484;
+  font-size: 20px
+}
+
+
 header nav {
   box-sizing: border-box;
   display: grid;
